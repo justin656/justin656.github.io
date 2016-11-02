@@ -172,7 +172,7 @@
 
 			</div>
 			<script type="text/javascript">
-			alert("Hello World")
+			/*alert("Hello World")*/
 			</script>
 			<script language="JavaScript1.2">
 			if (navigator.appName != "Microsoft Internet Explorer")
@@ -198,12 +198,12 @@
 			Pic= new Array(8);
 			for (i=0; i<8; i++)
 			{ Pic[i] = new Image();
-			  Pic[i].src = "tetris_"+i+".gif";
+			  Pic[i].src = "http://www.lutanho.net/play/tetris_"+i+".gif";
 			}
 			PrePic= new Array(8);
 			for (i=0; i<8; i++)
 			{ PrePic[i] = new Image();
-			  PrePic[i].src = "tetrisp"+i+".gif";
+			  PrePic[i].src = "http://www.lutanho.net/play/tetrisp"+i+".gif";
 			}
 			PatternX=new Array(7);
 			PatternY=new Array(7);
@@ -517,7 +517,7 @@
 			for (j=0; j < MaxY; j++)
 			{ document.writeln("<NOBR>");
 			  for (i=0; i < MaxX; i++)
-			    document.write("<IMG src=\"tetris_0.gif\" border=0>");
+			    document.write("<IMG src=\"http://www.lutanho.net/play/tetris_0.gif\" border=0>");
 			  document.writeln("</NOBR><BR>");
 			}
 			document.writeln("</td></tr></table>");
@@ -556,7 +556,7 @@
 			<tr><td align=center>Lines:</td></tr>
 			<tr><td align=center><input type=button width="70" style="width:70; background-color:#ffffff" name="Lines" onClick="HideFocus()"></td></tr>
 			<tr><td align=center><input type="checkbox" onClick="IsPreview=this.checked; HideFocus();">Preview</td></tr>
-			<tr><td align=center><table border=2 cellpadding=0 cellspacing=3><tr><td><img src="tetrisp0.gif" border=0></td></tr></table></td></tr>
+			<tr><td align=center><table border=2 cellpadding=0 cellspacing=3><tr><td><img src="http://www.lutanho.net/play/tetrisp0.gif" border=0></td></tr></table></td></tr>
 			</table></td></tr></table>
 			</td></tr></table>
 			<script language="JavaScript">
