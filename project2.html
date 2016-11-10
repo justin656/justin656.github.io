@@ -2,7 +2,7 @@
 <style>canvas { background: #eee; }</style>
 <body>
 
-<buton onclick="start();">Start</button>
+<buton onclick="buttonPress();">Start</button>
 
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
@@ -43,9 +43,17 @@ for(c=0; c<brickColumnCount; c++) {
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
+function buttonPress{
+
+}
 
     if (alreadyStarted == 0)
-
+    {
+      start();
+    }
+    else
+    {
+    }
 
     function start(){
       //  alert("test");
@@ -54,10 +62,6 @@ document.addEventListener("mousemove", mouseMoveHandler, false);
         dy = -2;
         alreadyStarted = 1;
       }
-    }
-    else
-    {
-    }  
 /*
           function start(){
             var randomDX = Math.floor(Math.random() * 6) + 1
