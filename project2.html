@@ -2,7 +2,7 @@
 <style>canvas { background: #eee; }</style>
 <body>
 
-<buton onclick="draw();">Start</button>
+<buton onclick="start();">Start</button>
 
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
@@ -41,6 +41,14 @@ for(c=0; c<brickColumnCount; c++) {
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
+
+          function start(){
+            var randomDX = Math.floor(Math.random() * 6) + 1
+            var randomDY = Math.floor(Math.random() * 6) + 1
+            var negative ="-";
+            console.log(randomDX);
+            dx = randomdx
+          }
 
 function keyDownHandler(e) {
     if(e.keyCode == 39) {
