@@ -1,9 +1,11 @@
 <html>
 <style>canvas { background: #eee; }</style>
 <body>
-
+<br>
+    
 <buton onclick="buttonPress();">Start</button>
-
+<buton onclick="pause();">Pause</button>
+    
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
 
@@ -61,6 +63,13 @@ function buttonPress(){
         dx = 2;
         dy = -2;
         alreadyStarted = 1;
+      }
+     function pasue(){
+      //  alert("test");
+        //alert("test");
+        dx = 0;
+        dy = 0;
+        alreadyStarted = 0;
       }
 /*
           function start(){
