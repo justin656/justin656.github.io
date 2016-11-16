@@ -4,8 +4,8 @@
 <br>
 
 <button onclick="buttonPress();">Start</button>
-<button onclick="pause();">Pause</button>
-<button onclick="restart();">Restart</button>
+<!--button onclick="pause();">Pause</button>
+<button onclick="restart();">Restart</button-->
 
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
@@ -56,6 +56,10 @@ function buttonPress(){
     {
       start();
     }
+    elseif (alreadyStarted == 1)
+   {
+     pause();
+   }
      elseif (alreadyStarted == 2)
     {
       restart();
