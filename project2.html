@@ -55,14 +55,17 @@ function buttonPress(){
     if (alreadyStarted == 0)
     {
       start();
+      console.log("Started");
     }
     elseif (alreadyStarted == 1)
    {
      pause();
+     console.log("Pause");
    }
      elseif (alreadyStarted == 2)
     {
-      restart();
+      unpaused();
+      console.log("unpaused");
     }
   }
 
@@ -79,8 +82,8 @@ function buttonPress(){
         dy = 0;
         alreadyStarted = 2;
       }
-    function restart(){
-      
+    function unpaused(){
+
         dx = currentX;
         dy = currentY;
         alreadyStarted = 0;
