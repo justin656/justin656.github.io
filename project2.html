@@ -2,10 +2,10 @@
 <style>canvas { background: #eee; }</style>
 <body>
 <br>
-    
+
 <button onclick="buttonPress();">Start</button>
 <button onclick="pause();">Pause</button>
-    
+
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
 
@@ -32,7 +32,7 @@ var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
 var currentX = 0;
-var currentY = 0;    
+var currentY = 0;
 
 
 var alreadyStarted = 0;
@@ -58,9 +58,6 @@ function buttonPress(){
      elseif (alreadyStarted == 2)
     {
       restart();
-    }
-    else
-    {
     }
   }
 
@@ -190,11 +187,11 @@ function draw() {
 
     if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
         dx = -dx;
-        currentX = dx;
+        //currentX = dx;
     }
     if(y + dy < ballRadius) {
         dy = -dy;
-        currentY = dy;
+        //currentY = dy;
     }
     else if(y + dy > canvas.height-ballRadius) {
         if(x > paddleX && x < paddleX + paddleWidth) {
